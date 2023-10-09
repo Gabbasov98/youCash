@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="login2.html" style="display: block; margin-bottom: 20px;">
+            Авторизация 2
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="faq.html" style="display: block; margin-bottom: 20px;">
+            Ответы на вопросы
+        </a>
+
+
+
+
+        <button data-modal="questionModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Задайте вопрос
+        </button>
+        <button data-modal="questionModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо!
+        </button>
+        <button data-modal="walletModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Выберите платежную систему
+        </button>
+        <button data-modal="walletModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заполните данные
+        </button>
+        <button data-modal="walletModal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заполните данные 2
+        </button>
+        <button data-modal="walletModal4" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заполните данные 3
+        </button>
+
+    </div>
+
+    <div class="modal" id="questionModal">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="modal__title text48 text32-mob bold-text">
+                Задайте вопрос
+            </div>
+            <div class="faq-form">
+                <fieldset class="fg fg-gray _type2">
+                    <textarea></textarea>
+                    <label><span>Ваши комментарии</span></label>
+                </fieldset>
+                <div class="faq-form__nav">
+                    <button class="auth-form__btn m-btn-arrow m-btn m-btn-primary">
+                        <span>Отправить</span>
+                        <img src="img/next.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="questionModal2">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="thank-faq">
+                <img src="img/mail.svg" alt="" class="thank-faq__img">
+                <div class="thank-faq__text">
+                    <div class="modal__title text48 text32-mob bold-text">
+                        Спасибо!
+                    </div>
+                    <div class="text18 lh140">Ваше сообщение отправлено. В ближайшее время мы свяжемся с вами по электронной почте.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal wallet-modal" id="walletModal">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="modal__title text48 text32-mob bold-text">
+                Выберите платежную систему
+            </div>
+            <div class="wallet-modal__items grid-column3">
+                <div class="pay-system">
+                    <div class="pay-system__img">
+                        <img src="img/wallet-img.svg" alt="">
+                    </div>
+                    <div class="pay-system__bottom">
+                        <div class="pay-system__text">
+                            <div class="text18 bold-text">
+                                QIWI
+                            </div>
+                            <div class="text16">
+                                Вывод от 100 ₽
+                            </div>
+                        </div>
+                        <a href="" class="pay-system__btn">
+                            <img src="img/next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pay-system">
+                    <div class="pay-system__img">
+                        <img src="img/wallet-img2.svg" alt="">
+                    </div>
+                    <div class="pay-system__bottom">
+                        <div class="pay-system__text">
+                            <div class="text18 bold-text">
+                                Юмани
+                            </div>
+                            <div class="text16">
+                                Вывод от 100 ₽
+                            </div>
+                        </div>
+                        <a href="" class="pay-system__btn">
+                            <img src="img/next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pay-system">
+                    <div class="pay-system__img">
+                        <img src="img/wallet-img3.svg" alt="">
+                    </div>
+                    <div class="pay-system__bottom">
+                        <div class="pay-system__text">
+                            <div class="text18 bold-text">
+                                Банковская карта
+                            </div>
+                            <div class="text16">
+                                Вывод от 500 ₽
+                            </div>
+                        </div>
+                        <a href="" class="pay-system__btn">
+                            <img src="img/next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal wallet-modal" id="walletModal2">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <button class="catalog-item__back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 6L5 12L11 18" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Вернуться к выбору</span>
+                </button>
+                <div class="modal__title text48 text32-mob bold-text">
+                    Заполните данные
+                </div>
+            </div>
+
+            <form action="" class="wallet-form">
+                <div class="wallet-form__img">
+                    <img src="img/wallet-img3.svg" alt="">
+                </div>
+                <div class="wallet-form__content">
+                    <div class="wallet-form__top">
+                        <div class="text24 lh140 bold-text">
+                            Банковская карта
+                        </div>
+                        <div class="text16">
+                            Минимальная сумма вывода 500 ₽ или 5$.
+                        </div>
+                    </div>
+                    <div class="wallet-form__items">
+                        <fieldset class="fg fg-gray _type2">
+                            <input type="text" class="_card-field">
+                            <label><span>Номер карты</span></label>
+                        </fieldset>
+                    </div>
+                    <div class="wallet-form__nav">
+                        <button class="wallet-form__btn m-btn-arrow m-btn m-btn-primary">
+                            <span>Далее</span>
+                            <img src="img/next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal wallet-modal" id="walletModal3">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <button class="catalog-item__back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 6L5 12L11 18" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Вернуться к выбору</span>
+                </button>
+                <div class="modal__title text48 text32-mob bold-text">
+                    Заполните данные
+                </div>
+            </div>
+
+            <form action="" class="wallet-form">
+                <div class="wallet-form__img">
+                    <img src="img/wallet-img3.svg" alt="">
+                </div>
+                <div class="wallet-form__content">
+                    <div class="wallet-form__top">
+                        <div class="text24 lh140 bold-text">
+                            Банковская карта
+                        </div>
+                        <div class="text16">
+                            Минимальная сумма вывода 500 ₽ или 5$.
+                        </div>
+                    </div>
+                    <div class="wallet-form__items">
+                        <fieldset class="fg fg-gray _type2">
+                            <input type="text" class="_card-field">
+                            <label><span>Номер карты</span></label>
+                        </fieldset>
+
+                        <div class="wallet-code">
+                            <div class="wallet-code__text">
+                                <div class="text18 bold-text">
+                                    Введите код из SMS
+                                </div>
+                                <div class="text16">Мы отправили его на +7 903 123-45-67</div>
+                                <button class="auth-form__resend text14">
+                                    Отправить повторно
+                                </button>
+                            </div>
+                            <fieldset class="fg fg-gray _type2">
+                                <input type="text">
+                                <label><span>Код из SMS</span></label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="wallet-form__nav">
+                        <button class="wallet-form__btn m-btn-arrow m-btn m-btn-primary">
+                            <span>Привязать карту</span>
+                            <img src="img/next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal wallet-modal" id="walletModal4">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 21.9999L2 2M22 2L2 22" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <img src="img/modal-bg.svg" alt="" class="modal__bg">
+        <img src="img/modal-bg2.svg" alt="" class="modal__bg2">
+
+
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <button class="catalog-item__back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 6L5 12L11 18" stroke="#0C131E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Вернуться к выбору</span>
+                </button>
+                <div class="modal__title text48 text32-mob bold-text">
+                    Заполните данные
+                </div>
+            </div>
+
+            <form action="" class="wallet-form">
+                <div class="wallet-form__img">
+                    <img src="img/wallet-img.svg" alt="">
+                </div>
+                <div class="wallet-form__content">
+                    <div class="wallet-form__top">
+                        <div class="text24 lh140 bold-text">
+                            QIWI
+                        </div>
+                        <div class="text16">
+                            Минимальная сумма вывода 100 ₽ или 1$.
+                        </div>
+                    </div>
+                    <div class="wallet-form__items">
+                        <fieldset class="fg fg-gray _type2">
+                            <input type="text">
+                            <label><span>Номер кошелька</span></label>
+                        </fieldset>
+                    </div>
+                    <div class="wallet-form__nav">
+                        <button class="wallet-form__btn m-btn-arrow m-btn m-btn-primary">
+                            <span>Привязать кошелек</span>
+                            <img src="img/next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
