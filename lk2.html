@@ -187,151 +187,264 @@
 
 
                     <div class="lk__content">
-                        <div class="profile">
-                            <div class="stat">
-                                <div class="text24 lh140 bold-text">
-                                    Статистика
+                        <div class="withdraw">
+                            <div class="text24 lh140 bold-text">
+                                Вывод средств
+                            </div>
+                            <div class="withdraw__grid">
+                                <div class="withdraw-form">
+                                    <fieldset class="fg fg-gray _type2">
+                                        <select>
+                                            <option>20 $</option>
+                                            <option selected>1 226 ₽</option>
+                                            <option>15 €</option>
+                                        </select>
+                                        <label><span>Валюта вывода</span></label>
+                                    </fieldset>
+                                    <fieldset class="fg fg-gray _type2">
+                                        <select>
+                                            <option selected>*********213 (QIWI)</option>
+                                            <option>*********213 (QIWI) 2</option>
+                                            <option>*********213 (QIWI) 3</option>
+                                        </select>
+                                        <label><span>Кошелек</span></label>
+                                    </fieldset>
+                                    <fieldset class="fg fg-gray _type2">
+                                        <input type="text" value="1 226 ₽">
+                                        <label><span>Сумма</span></label>
+                                    </fieldset>
+                                    <div class="withdraw-form__nav">
+                                        <button class="withdraw-form__btn m-btn-arrow m-btn m-btn-primary">
+                                            <span>Вывести 1 226 ₽</span>
+                                            <img src="img/next.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="buy-stat">
-                                    <div class="buy-stat__content">
-                                        <div class="text60 text48-mob bold-text">
-                                            253
-                                        </div>
-                                        <div class="text16">Всего сделано покупок</div>
-                                    </div>
-                                    <div class="buy-stat__icon">
-                                        <div class="advantage-card__icon">
-                                            <img src="img/rect2.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="stat__items">
-                                    <div class="stat__item">
-                                        <div class="stat__item-title text16">
-                                            Заработано сегодня:
-                                        </div>
-                                        <div class="lk-card__nums">
+                                <div class="withdraw__sidebar">
+                                    <div class="withdraw-info">
+                                        <div class="lk-card__nums bold-text">
                                             <div class="lk-card__num">
-                                                <div class="text16">226 ₽</div>
+                                                <div class="text24">1 226 ₽ </div>
                                             </div>
                                             <div class="lk-card__num">
-                                                <div class="text16">2 $</div>
+                                                <div class="text24">12 $</div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="stat__item">
-                                        <div class="stat__item-title text16">
-                                            Заработано за все время:
-                                        </div>
-                                        <div class="lk-card__nums">
-                                            <div class="lk-card__num">
-                                                <div class="text16">12 582 ₽</div>
-                                            </div>
-                                            <div class="lk-card__num">
-                                                <div class="text16">231 $</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stat__item">
-                                        <div class="stat__item-title text16">
-                                            Выведено за все время:
-                                        </div>
-                                        <div class="lk-card__nums">
-                                            <div class="lk-card__num">
-                                                <div class="text16">11 356 ₽</div>
-                                            </div>
-                                            <div class="lk-card__num">
-                                                <div class="text16">219 $</div>
-                                            </div>
+                                        <div class="lk-card__desc text16">
+                                            Доступный баланс
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="awards">
-                                <div class="text24 lh140 bold-text">
-                                    Награды
+                        </div>
+
+                        <div class="wallets">
+                            <div class="text24 lh140 bold-text">
+                                Ваши кошельки
+                            </div>
+                            <div class="wallets__grid grid-column4 grid-column3-tablet">
+                                <div class="wallet-card">
+                                    <div class="wallet-card__img">
+                                        <img src="img/wallet-img.svg" alt="">
+                                    </div>
+                                    <div class="wallet-card__content">
+                                        <div class="text18 lh140 bold-text">
+                                            QIWI
+                                        </div>
+                                        <div class="text16">
+                                            *********213
+                                        </div>
+                                    </div>
+                                    <button class="wallet-card__remove">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 7H6.55556H19" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.57143 7.2V5.6C8.57143 5.17565 8.75204 4.76869 9.07353 4.46863C9.39502 4.16857 9.83106 4 10.2857 4H13.7143C14.1689 4 14.605 4.16857 14.9265 4.46863C15.248 4.76869 15.4286 5.17565 15.4286 5.6V7.2M18 7.2V18.4C18 18.8243 17.8194 19.2313 17.4979 19.5314C17.1764 19.8314 16.7404 20 16.2857 20H7.71429C7.25963 20 6.82359 19.8314 6.5021 19.5314C6.18061 19.2313 6 18.8243 6 18.4V7.2H18Z" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="awards__steps">
-                                    <div class="award-step _done">
-                                        <div class="award-step__badge badge">
-                                            <span>Вы здесь</span>
-                                        </div>
-                                        <div class="award-step__img">
-                                            <img src="img/award-img.svg" alt="">
-                                        </div>
-                                        <div class="text16 text14-tablet bold-text">
-                                            Standard
-                                        </div>
-                                        <div class="award-step__bottom">
-                                            <div class="text16">
-                                                0 $
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="award-step _current">
-                                        <div class="award-step__badge badge">
-                                            <span>Вы здесь</span>
+                                <div class="wallet-card">
+                                    <div class="wallet-card__img">
+                                        <img src="img/wallet-img2.svg" alt="">
+                                    </div>
+                                    <div class="wallet-card__content">
+                                        <div class="text18 lh140 bold-text">
+                                            Юмани
                                         </div>
-                                        <div class="award-step__img">
-                                            <img src="img/award-img2.svg" alt="">
-                                        </div>
-                                        <div class="text16 text14-tablet bold-text">
-                                            Bronze
-                                        </div>
-                                        <div class="award-step__bottom">
-                                            <div class="text16">
-                                                10 $
-                                            </div>
+                                        <div class="text16">
+                                            *********129
                                         </div>
                                     </div>
-
-                                    <div class="award-step ">
-                                        <div class="award-step__badge badge">
-                                            <span>Вы здесь</span>
-                                        </div>
-                                        <div class="award-step__img">
-                                            <img src="img/award-img3.svg" alt="">
-                                        </div>
-                                        <div class="text16 text14-tablet bold-text">
-                                            Silver
-                                        </div>
-                                        <div class="award-step__bottom">
-                                            <div class="text16">
-                                                25 $
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="award-step ">
-                                        <div class="award-step__badge badge">
-                                            <span>Вы здесь</span>
-                                        </div>
-                                        <div class="award-step__img">
-                                            <img src="img/award-img4.svg" alt="">
-                                        </div>
-                                        <div class="text16 text14-tablet bold-text">
-                                            Gold
-                                        </div>
-                                        <div class="award-step__bottom">
-                                            <div class="text16">
-                                                100 $
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="awards__progress">
-                                        <span style="width: 45%;"></span>
-                                    </div>
+                                    <button class="wallet-card__remove">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 7H6.55556H19" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.57143 7.2V5.6C8.57143 5.17565 8.75204 4.76869 9.07353 4.46863C9.39502 4.16857 9.83106 4 10.2857 4H13.7143C14.1689 4 14.605 4.16857 14.9265 4.46863C15.248 4.76869 15.4286 5.17565 15.4286 5.6V7.2M18 7.2V18.4C18 18.8243 17.8194 19.2313 17.4979 19.5314C17.1764 19.8314 16.7404 20 16.2857 20H7.71429C7.25963 20 6.82359 19.8314 6.5021 19.5314C6.18061 19.2313 6 18.8243 6 18.4V7.2H18Z" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="awards__bottom">
-                                    <div class="awards__hint">
-                                        <img src="img/hint-icon.svg" alt="">
-                                        <span class="text16 text14-mob">
-                                                До получения следующего типа аккаунта осталось заработать 10 $ или 700 ₽
-                                            </span>
+
+                                <div class="wallet-card">
+                                    <div class="wallet-card__img">
+                                        <img src="img/wallet-img3.svg" alt="">
                                     </div>
+                                    <div class="wallet-card__content">
+                                        <div class="text18 lh140 bold-text">
+                                            Банковская карта
+                                        </div>
+                                        <div class="text16">
+                                            *********9128
+                                        </div>
+                                    </div>
+                                    <button class="wallet-card__remove">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 7H6.55556H19" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.57143 7.2V5.6C8.57143 5.17565 8.75204 4.76869 9.07353 4.46863C9.39502 4.16857 9.83106 4 10.2857 4H13.7143C14.1689 4 14.605 4.16857 14.9265 4.46863C15.248 4.76869 15.4286 5.17565 15.4286 5.6V7.2M18 7.2V18.4C18 18.8243 17.8194 19.2313 17.4979 19.5314C17.1764 19.8314 16.7404 20 16.2857 20H7.71429C7.25963 20 6.82359 19.8314 6.5021 19.5314C6.18061 19.2313 6 18.8243 6 18.4V7.2H18Z" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 12V16" stroke="#BCB9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
                                 </div>
+
+                                <button class="add-wallet">
+                                    <span class="advantage-card__icon">
+                                            <img src="img/plus.svg" alt="">
+                                        </span>
+                                    <span class="text18 bold-text">
+                                            Добавить кошелек
+                                        </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="transaction">
+                            <div class="text24 lh140 bold-text">
+                                История операций
+                            </div>
+                            <div class="transaction-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Номер операции</th>
+                                            <th>Дата перевода</th>
+                                            <th>Сумма</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Номер операции
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    №192381283
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Дата перевода
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    20.09.2023, 16:51
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Сумма
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    1 226 ₽
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Статус
+                                                </div>
+                                                <div class="transaction-table__status _muted">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Ожидание</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Номер операции
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    №123151237
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Дата перевода
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    12.08.2023, 12:03
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Сумма
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    591 ₽
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Статус
+                                                </div>
+                                                <div class="transaction-table__status ">
+                                                    <img src="img/success.svg" alt="">
+                                                    <span>Выплачено</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Номер операции
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    №161353451
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Дата перевода
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    05.06.2023, 17:24
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Сумма
+                                                </div>
+                                                <div class="transaction-table__desc">
+                                                    1 921 ₽
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="transaction-table__title">
+                                                    Статус
+                                                </div>
+                                                <div class="transaction-table__status ">
+                                                    <img src="img/success.svg" alt="">
+                                                    <span>Выплачено</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
